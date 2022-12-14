@@ -1,0 +1,16 @@
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.exe.config
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.exe
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.pdb
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.AssemblyReference.cache
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Employees.resources
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Login.resources
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Properties.Resources.resources
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.GenerateResource.cache
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.CoreCompileInputs.cache
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.exe
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.pdb
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Departments.resources
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Salaries.resources
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Works.resources
+C:\Users\FURKAN\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Branch.resources
