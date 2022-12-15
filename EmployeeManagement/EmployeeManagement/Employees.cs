@@ -34,11 +34,6 @@ namespace EmployeeManagement
             }
         }
 
-        private void GetBranch()
-        {
-            string Query = "select * from Branch";
-
-        }
 
         private void GetDepartment()
         {
@@ -98,7 +93,7 @@ namespace EmployeeManagement
                     Query = string.Format(Query, EmpName, EmpGender, EmpDepartment, EmpBirthday, EmpJoinDate, EmpSalary );
                     connection.SetData(Query);
                     ShowEmployees();
-                    MessageBox.Show("Employee Added !!!");
+                    MessageBox.Show("Employee Added !");
                     EmployeeNameBox.Text = "";
                     SalaryBox.Text = "";
                     GenderBox.SelectedIndex = -1;
@@ -120,6 +115,8 @@ namespace EmployeeManagement
         int Key = 0;
         private void EmployeeList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            EmployeeList.CurrentRow.Selected = true;
+            EmployeeNameBox.Text = EmployeeList.Rows[e.RowIndex].Cells["EmployeeName"].Value.ToString();
             EmployeeNameBox.Text = EmployeeList.SelectedRows[0].Cells[1].Value.ToString();
             GenderBox.Text = EmployeeList.SelectedRows[0].Cells[2].Value.ToString();
             DepartmentBox.Text = EmployeeList.SelectedRows[0].Cells[3].Value.ToString();
@@ -171,7 +168,7 @@ namespace EmployeeManagement
         {
             try
             {
-                if (EmployeeNameBox.Text == "" || GenderBox.SelectedIndex == -1 || DepartmentBox.SelectedIndex == -1 || SalaryBox.Text == "")
+                if (EmployeeNameBox.Text == "" || GenderBox.SelectedIndex == -1 || SalaryBox.Text == "")
                 {
                     MessageBox.Show("Missing Data !!");
                 }
@@ -215,6 +212,44 @@ namespace EmployeeManagement
             Salaries Object = new Salaries();
             Object.Show();
             this.Hide();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BranchText_Click(object sender, EventArgs e)
+        {
+            Branch Object = new Branch();
+            Object.Show();
+            this.Hide();
+        }
+
+        private void DepartmentsText_Click(object sender, EventArgs e)
+        {
+            Departments Object = new Departments();
+            Object.Show();
+            this.Hide();
+        }
+
+        private void ProjectText_Click(object sender, EventArgs e)
+        {
+            Works Object = new Works();
+            Object.Show();
+            this.Hide();
+        }
+
+        private void SalaryText_Click(object sender, EventArgs e)
+        {
+            Salaries Object = new Salaries();
+            Object.Show();
+            this.Hide();
+        }
+
+        private void Employees_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

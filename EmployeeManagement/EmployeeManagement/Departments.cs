@@ -86,7 +86,7 @@ namespace EmployeeManagement
             {
                 if (DepartmentNameTable.Text == "")
                 {
-                    MessageBox.Show("Missing Data !!");
+                    MessageBox.Show("Missing Data !");
                 }
                 else
                 {
@@ -112,7 +112,7 @@ namespace EmployeeManagement
             {
                 if (DepartmentNameTable.Text == "")
                 {
-                    MessageBox.Show("Missing Data !!");
+                    MessageBox.Show("Missing Data !");
                 }
                 else
                 {
@@ -139,16 +139,16 @@ namespace EmployeeManagement
             this.Hide();
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void SalaryText_Click(object sender, EventArgs e)
         {
             Salaries Object = new Salaries();
             Object.Show();
             this.Hide();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void LogoutText_Click(object sender, EventArgs e)
@@ -161,14 +161,23 @@ namespace EmployeeManagement
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void ProjectText_Click(object sender, EventArgs e)
         {
-
+            Works Object = new Works();
+            Object.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BranchText_Click(object sender, EventArgs e)
+        {
+            Branch Object = new Branch();
+            Object.Show();
+            this.Hide();
         }
     }
 }

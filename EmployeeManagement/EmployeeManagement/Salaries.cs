@@ -29,22 +29,23 @@ namespace EmployeeManagement
             SalaryEmployeeBox.DataSource = connection.GetData(Query);
         }
 
-        int Salaryy = 0;
+        int dailySalary = 0;
         string Period = "";
         private void GetSalary()
         {
             string Query = "select EmployeeSalary from Employee where EmployeeName = {0}";
             Query = String.Format(Query, SalaryEmployeeBox.SelectedValue.ToString());
-            foreach(DataRow dr in connection.GetData(Query).Rows)
+            foreach(DataRow dataRow in connection.GetData(Query).Rows)
             {
-                Salaryy = Convert.ToInt32(dr["EmployeeSalary"].ToString());
+                dailySalary = Convert.ToInt32(dataRow["EmployeeSalary"].ToString());
             }
             //MessageBox.Show("" + Salaryy);
             //SalaryEmployeeBox.DataSource = connection.GetData(Query);
+            
 
             if(DaysBox.Text == "")
             {
-                AmountBox.Text = "" + (d * Salaryy);
+                AmountBox.Text = (d * dailySalary) + " TL";
             }else if(Convert.ToInt32(DaysBox.Text) > 31 )
             {
                 MessageBox.Show("Days Can not be Greater Then 31 ");
@@ -52,7 +53,7 @@ namespace EmployeeManagement
             else
             {
                 d = Convert.ToInt32(DaysBox.Text);
-                AmountBox.Text = "" + (d * Salaryy);
+                AmountBox.Text = "" + (d * dailySalary) + " TL";
             }
         }
 
@@ -94,7 +95,7 @@ namespace EmployeeManagement
                 else
                 {
                     Period = PeriodDate.Value.Date.Month.ToString() + "-" + PeriodDate.Value.Date.Year.ToString();
-                    int Amount = Salaryy * Convert.ToInt32(PeriodDate.Text);
+                    int Amount = dailySalary * (Convert.ToInt32(PeriodDate.Text));
                     int Days = Convert.ToInt32(DaysBox.Text);
                     string Query = "insert into SalaryTable values({0},{1}, '{2}',{3}, '{4}')";
                     Query = string.Format(Query, SalaryEmployeeBox.SelectedValue.ToString(), Days, Period, Amount, DateTime.Today.Date);
