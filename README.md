@@ -24,6 +24,7 @@ SQL Stored Procedures, Triggers, and Views
 📝 Database Design
 
 Relational Schema with 5 tables: Branch, Department, Employee, Project, Salary
+
 Relationships:
 Branch → Department via BranchID
 Department → Employee via DepartmentID
