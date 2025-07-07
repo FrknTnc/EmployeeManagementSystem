@@ -26,10 +26,10 @@ SQL Stored Procedures, Triggers, and Views
 Relational Schema with 5 tables: Branch, Department, Employee, Project, Salary
 
 Relationships:
-Branch → Department via BranchID
-Department → Employee via DepartmentID
-Employee → Project via EmployeeID
-Employee → Salary via EmployeeID
+Branch → Department via BranchID, 
+Department → Employee via DepartmentID,
+Employee → Project via EmployeeID,
+Employee → Salary via EmployeeID,
 
 📂 How to Run
 
