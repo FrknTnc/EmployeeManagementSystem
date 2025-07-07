@@ -13,12 +13,14 @@ Data integrity ensured by stored procedures and triggers
 Views for simplified data querying across multiple tables
 Alerts and confirmations for all database operations
 Backup-ready SQL database structure
+
 🏗️ Technologies Used
 
 C# (Windows Forms via Visual Studio)
 Microsoft SQL Server (MSSQL)
 ERDPlus for ER diagrams
 SQL Stored Procedures, Triggers, and Views
+
 📝 Database Design
 
 Relational Schema with 5 tables: Branch, Department, Employee, Project, Salary
@@ -27,30 +29,14 @@ Branch → Department via BranchID
 Department → Employee via DepartmentID
 Employee → Project via EmployeeID
 Employee → Salary via EmployeeID
-Views:
-EMPLOYEE_PROJECT_VIEW for employee-project details
-BRANCH_DEPARTMENT_EMPLOYEE_VIEW for overall employee hierarchy
-Example SQL Trigger:
-CREATE TRIGGER [dbo].[NewYear2023Bonus]
-ON [dbo].[SalaryTable]
-AFTER INSERT
-AS
-BEGIN
-  UPDATE SalaryTable
-  SET Amount = Amount + 5000
-  WHERE [dbo].[SalaryTable].[PeriodDate] = '12-2022';
-END
-💻 Screenshots
 
-Branch, Department, Employee, Project Management Screens
-Salary Management Screen with Bonus Calculation
-Data Visualization via Views
 📂 How to Run
 
 Restore the provided MSSQL database backup.
 Open the Visual Studio solution.
 Update the database connection string in the app settings.
 Build and run the application.
+
 📖 Project Highlights
 
 This project demonstrates the integration of C# desktop applications with SQL databases, applying advanced SQL techniques such as triggers, views, and stored procedures for enterprise-level database management.
