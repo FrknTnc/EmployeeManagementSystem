@@ -37,6 +37,5 @@ Open the Visual Studio solution.
 Update the database connection string in the app settings.
 Build and run the application.
 
-📖 Project Highlights
-
-This project demonstrates the integration of C# desktop applications with SQL databases, applying advanced SQL techniques such as triggers, views, and stored procedures for enterprise-level database management.
+🎥 Project Video Demo
+https://youtu.be/yv_42glGGzI
